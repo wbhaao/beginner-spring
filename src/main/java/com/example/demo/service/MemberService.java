@@ -3,10 +3,11 @@ package com.example.demo.service;
 import com.example.demo.domain.Member;
 import com.example.demo.repogitory.MemberRepogitory;
 import com.example.demo.repogitory.MemoryMemberRepogitory;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class MemberService {
     private final MemberRepogitory memberRepogitory;
 

@@ -1,9 +1,10 @@
 package com.example.demo.repogitory;
 
 import com.example.demo.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
-
+@Repository
 public class MemoryMemberRepogitory implements MemberRepogitory {
 
     private static Map<Long, Member> store = new HashMap<>();
