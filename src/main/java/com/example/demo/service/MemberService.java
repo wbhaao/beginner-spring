@@ -8,7 +8,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemberRepogitory memberRepogitory = new MemoryMemberRepogitory();
+    private final MemberRepogitory memberRepogitory;
+
+    public MemberService(MemberRepogitory memberRepogitory){
+        this.memberRepogitory = memberRepogitory;
+    }
     /*
     * 회원 가입
     * */
